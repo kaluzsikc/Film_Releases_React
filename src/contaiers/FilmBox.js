@@ -31,7 +31,8 @@ class FilmBox extends Component {
                     name: "Captain Marvel",
                     url: "https://www.imdb.com/title/tt4154664/?ref_=rlm"
                 }
-            ]
+            ],
+            calendarUrl: "https://www.imdb.com/calendar/?region=gb"
         }
     }
 
@@ -40,6 +41,7 @@ class FilmBox extends Component {
             <div className='film-box'>
                 <h1>Upcoming Film Releases for UK</h1>
                 <FilmList data={this.state.data} />
+                <button className="upcomingLink"><a href={this.state.calendarUrl}><h2>View more upcoming releases >></h2></a></button>
             </div>
         )
     }

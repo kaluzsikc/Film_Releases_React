@@ -11,7 +11,6 @@ class FilmList extends Component{
                     key={film.id}
                     name={film.name}>{film.url}
                 </Film>
-
             )
         })
 
@@ -20,7 +19,6 @@ class FilmList extends Component{
                 {filmNodes}
             </div>
         )
-
     }
 }
 

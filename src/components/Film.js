@@ -10,9 +10,7 @@ class Film extends Component{
                 </ul>
             </div>
         )
-
     }
-
 }
 
 export default Film;
