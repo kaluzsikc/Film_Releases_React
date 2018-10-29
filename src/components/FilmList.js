@@ -1,4 +1,5 @@
 import React, { Component} from 'react';
+import Film from './Film';
 
 class FilmList extends Component{
 
@@ -7,9 +8,8 @@ class FilmList extends Component{
         const filmNodes = this.props.data.map(film => {
             return(
                 <Film
-                key={film.id}
-                name={film.name}>{film.url}
-
+                    key={film.id}
+                    name={film.name}>{film.url}
                 </Film>
 
             )
